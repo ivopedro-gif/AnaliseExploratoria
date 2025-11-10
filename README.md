@@ -19,3 +19,138 @@ Abaixo estão as descrições dos resultados gráficos obtidos a partir do scrip
 * **Boxplot do Score por Escolaridade:** Este gráfico compara o score de periculosidade entre os níveis de escolaridade. Observa-se que a mediana do score parece aumentar com o nível de escolaridade: o "Ensino Fundamental" tem a menor mediana, seguido do "Ensino Médio" e, por fim, "Ensino Superior" com a mediana mais alta.
 
 * **Gráfico de Barras de Reincidência:** O gráfico de barras mostra a contagem de reincidentes. Fica claro que a maioria dos indivíduos na base de dados **não** é reincidente (barra "Não" é a mais alta), embora o número de reincidentes ("Sim") seja considerável.
+
+## Definições das Medidas Estatísticas
+
+Suponha que temos um conjunto de dados com valores
+$x_1, x_2, \dots, x_n$:
+
+Média ($\bar{x}$)
+
+É o valor médio dos dados, calculado pela soma de todos os valores dividida pela quantidade de observações.
+
+𝑥
+ˉ
+=
+1
+𝑛
+∑
+𝑖
+=
+1
+𝑛
+𝑥
+𝑖
+x
+ˉ
+=
+n
+1
+	​
+
+i=1
+∑
+n
+	​
+
+x
+i
+	​
+
+Mediana
+
+É o valor central do conjunto de dados quando eles estão em ordem crescente.
+Se o número de observações for par, a mediana é a média dos dois valores centrais.
+
+1º Quartil (Q1) e 3º Quartil (Q3)
+
+São os valores que dividem o conjunto em quatro partes iguais.
+O 1º quartil (Q1) representa 25% dos dados e o 3º quartil (Q3) representa 75%.
+
+Variância ($s^2$)
+
+Mede o quanto os valores se afastam da média.
+É obtida pela soma dos quadrados das diferenças entre cada valor e a média, dividida por $(n - 1)$.
+
+𝑠
+2
+=
+1
+𝑛
+−
+1
+∑
+𝑖
+=
+1
+𝑛
+(
+𝑥
+𝑖
+−
+𝑥
+ˉ
+)
+2
+s
+2
+=
+n−1
+1
+	​
+
+i=1
+∑
+n
+	​
+
+(x
+i
+	​
+
+−
+x
+ˉ
+)
+2
+Desvio Padrão ($s$)
+
+É a raiz quadrada da variância e indica, em média, quanto os valores se afastam da média.
+
+𝑠
+=
+𝑠
+2
+s=
+s
+2
+	​
+
+Amplitude (A)
+
+É a diferença entre o maior e o menor valor observado no conjunto de dados.
+
+𝐴
+=
+max
+⁡
+(
+𝑥
+𝑖
+)
+−
+min
+⁡
+(
+𝑥
+𝑖
+)
+A=max(x
+i
+	​
+
+)−min(x
+i
+	​
+
+)
