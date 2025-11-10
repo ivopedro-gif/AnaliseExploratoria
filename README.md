@@ -8,7 +8,7 @@ Quando um commit é feito, é registroada todas as mudanças feitas nos arquivos
 
 É uma forma de guardar um ponto na história do projeto, para que depois possamos ver o que foi feito, por quem e até voltar a versões anteriores, se precisar.
  
-## Análise Gráfica (Item 8)
+## Análise Gráfica
 
 Abaixo estão as descrições dos resultados gráficos obtidos a partir do script `analise_graficos.R`.
 
@@ -22,135 +22,54 @@ Abaixo estão as descrições dos resultados gráficos obtidos a partir do scrip
 
 ## Definições das Medidas Estatísticas
 
-Suponha que temos um conjunto de dados com valores
+Suponha que temos um conjunto de dados com valores  
 $x_1, x_2, \dots, x_n$:
 
-Média ($\bar{x}$)
+---
 
+### **Média ($\bar{x}$)**  
 É o valor médio dos dados, calculado pela soma de todos os valores dividida pela quantidade de observações.
 
-𝑥
-ˉ
-=
-1
-𝑛
-∑
-𝑖
-=
-1
-𝑛
-𝑥
-𝑖
-x
-ˉ
-=
-n
-1
-	​
+$$
+\bar{x} = \frac{1}{n} \sum_{i=1}^{n} x_i
+$$
 
-i=1
-∑
-n
-	​
+---
 
-x
-i
-	​
-
-Mediana
-
-É o valor central do conjunto de dados quando eles estão em ordem crescente.
+### **Mediana**  
+É o valor central do conjunto de dados quando eles estão em ordem crescente.  
 Se o número de observações for par, a mediana é a média dos dois valores centrais.
 
-1º Quartil (Q1) e 3º Quartil (Q3)
+---
 
-São os valores que dividem o conjunto em quatro partes iguais.
+### **1º Quartil (Q1) e 3º Quartil (Q3)**  
+São os valores que dividem o conjunto em quatro partes iguais.  
 O 1º quartil (Q1) representa 25% dos dados e o 3º quartil (Q3) representa 75%.
 
-Variância ($s^2$)
+---
 
-Mede o quanto os valores se afastam da média.
+### **Variância ($s^2$)**  
+Mede o quanto os valores se afastam da média.  
 É obtida pela soma dos quadrados das diferenças entre cada valor e a média, dividida por $(n - 1)$.
 
-𝑠
-2
-=
-1
-𝑛
-−
-1
-∑
-𝑖
-=
-1
-𝑛
-(
-𝑥
-𝑖
-−
-𝑥
-ˉ
-)
-2
-s
-2
-=
-n−1
-1
-	​
+$$
+s^2 = \frac{1}{n - 1} \sum_{i=1}^{n} (x_i - \bar{x})^2
+$$
 
-i=1
-∑
-n
-	​
+---
 
-(x
-i
-	​
-
-−
-x
-ˉ
-)
-2
-Desvio Padrão ($s$)
-
+### **Desvio Padrão ($s$)**  
 É a raiz quadrada da variância e indica, em média, quanto os valores se afastam da média.
 
-𝑠
-=
-𝑠
-2
-s=
-s
-2
-	​
+$$
+s = \sqrt{s^2}
+$$
 
-Amplitude (A)
+---
 
+### **Amplitude (A)**  
 É a diferença entre o maior e o menor valor observado no conjunto de dados.
 
-𝐴
-=
-max
-⁡
-(
-𝑥
-𝑖
-)
-−
-min
-⁡
-(
-𝑥
-𝑖
-)
-A=max(x
-i
-	​
-
-)−min(x
-i
-	​
-
-)
+$$
+A = \max(x_i) - \min(x_i)
+$$
